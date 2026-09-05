@@ -1,4 +1,5 @@
-import { DynamoRequestKeys } from "./models/dynamoRequestKeys.interface";
+import { DynamoRequestKeys } from "./models/dynamo/dynamoRequestKeys.interface";
+
 
 export default class Utils {
     public static validateParamas(id: string, pk: string): DynamoRequestKeys {
