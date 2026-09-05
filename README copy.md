@@ -1,5 +1,6 @@
-# source_trace_response_function
-Repositorio encargado de retornar la respuesta del análisis realizado por la ia al código fuente suministrado.
+# source_trace_invoker_function
+Repositorio encargado de invocar la instancia para el análisis de código para el proyecto source trace
+
 # Instrucciones de uso
 
 1. Descargar dependencias
