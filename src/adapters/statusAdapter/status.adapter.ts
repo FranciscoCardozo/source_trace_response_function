@@ -3,7 +3,7 @@ import debugLib from 'debug';
 import DatabasePort from "../../ports/databasePort/database.port";
 
 
-const debug = debugLib('status:adapter');
+const debug = debugLib('response:statusAdapter');
 
 export default class StatusAdapter{
     public static async getStatusAnalysis(req: Request, res: Response): Promise<void> {
