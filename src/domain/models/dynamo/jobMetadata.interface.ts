@@ -11,6 +11,11 @@ export interface FunctionalAnalysis {
     summary: string;
 }
 
+export interface EvidenceSummary {
+    key?: string;
+    label?: string;
+}
+
 export interface JobMetadata {
     PK: string;
     SK: "METADATA";
@@ -23,6 +28,7 @@ export interface JobMetadata {
     apisConsumed?: string[];
     architecturePattern?: string;
     architectureDiagram?: string;
+    evidences?: EvidenceSummary[];
 }
 
 export interface JobEvidence {
@@ -34,6 +40,8 @@ export interface JobEvidence {
 }
 
 export const METADATA_SK = "METADATA";
+
+export const EVIDENCE_SK_PREFIX = "EVIDENCE#";
 
 export function buildJobPK(jobId: string): string {
     return `JOB#${jobId}`;
